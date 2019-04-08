@@ -1,0 +1,16 @@
+The exception description:
+
+io.realm.exceptions.RealmError: Unrecoverable error. ftruncate() failed: Interrupted system call in /Users/cm/Realm/realm-java/realm/realm-library/src/main/cpp/io_realm_internal_OsSharedRealm.cpp line 101
+    at io.realm.internal.OsSharedRealm.nativeGetSharedRealm(Native Method)
+    at io.realm.internal.OsSharedRealm.<init>(OsSharedRealm.java:171)
+    at io.realm.internal.OsSharedRealm.getInstance(OsSharedRealm.java:241)
+    at io.realm.internal.OsSharedRealm.getInstance(OsSharedRealm.java:231)
+    at io.realm.RealmCache.b(RealmCache.java:319)
+    at io.realm.RealmCache.a(RealmCache.java:282)
+    at io.realm.r.l(Realm.java:354)
+    at com.baiiwang.smsprivatebox.utils.ai.a(RealmUtil.java:108)
+    at com.baiiwang.smsprivatebox.g.c.a(MessagesDataWarpper.java:704)
+    at com.baiiwang.smsprivatebox.g.c.b(MessagesDataWarpper.java:310)
+    at com.baiiwang.smsprivatebox.receiver.SMSSendResult.a(SMSSendResult.java:27)
+    at com.klinker.android.send_message.StatusUpdatedReceiver$1.run(StatusUpdatedReceiver.java:24)
+    at java.lang.Thread.run(Thread.java:818)
